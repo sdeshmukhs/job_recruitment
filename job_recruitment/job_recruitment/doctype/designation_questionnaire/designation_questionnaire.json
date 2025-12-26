@@ -1,0 +1,47 @@
+{
+ "actions": [],
+ "creation": "2024-05-22 12:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "question",
+  "question_type",
+  "mandatory"
+ ],
+ "fields": [
+  {
+   "fieldname": "question",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Question",
+   "reqd": 1
+  },
+  {
+   "default": "Text Input",
+   "fieldname": "question_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Question Type",
+   "options": "Text Input\nAttachment",
+   "reqd": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "mandatory",
+   "fieldtype": "Check",
+   "label": "Mandatory"
+  }
+ ],
+ "istable": 1,
+ "links": [],
+ "modified": "2024-05-22 12:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Job Recruitment",
+ "name": "Designation Questionnaire",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
