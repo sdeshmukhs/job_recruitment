@@ -1,0 +1,43 @@
+{
+    "actions": [],
+    "creation": "2024-05-22 12:00:00.000000",
+    "doctype": "DocType",
+    "editable_grid": 1,
+    "engine": "InnoDB",
+    "field_order": [
+        "question",
+        "answer",
+        "attachment"
+    ],
+    "fields": [
+        {
+            "fieldname": "question",
+            "fieldtype": "Data",
+            "in_list_view": 1,
+            "label": "Question",
+            "read_only": 1
+        },
+        {
+            "fieldname": "answer",
+            "fieldtype": "Long Text",
+            "in_list_view": 1,
+            "label": "Answer"
+        },
+        {
+            "fieldname": "attachment",
+            "fieldtype": "Attach",
+            "label": "Attachment"
+        }
+    ],
+    "istable": 1,
+    "links": [],
+    "modified": "2024-05-22 12:00:00.000000",
+    "modified_by": "Administrator",
+    "module": "Job Recruitment",
+    "name": "Job Applicant Response",
+    "owner": "Administrator",
+    "permissions": [],
+    "sort_field": "modified",
+    "sort_order": "DESC",
+    "states": []
+}

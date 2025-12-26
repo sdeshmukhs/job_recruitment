@@ -42,9 +42,17 @@ app_license = "mit"
 # include js in page
 # page_js = {"page" : "public/js/file.js"}
 
-# include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
-# doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
+app_include_css = "/assets/job_recruitment/css/employee_ui.css"
+
+doctype_js = {
+	"Job Applicant" : "public/js/job_applicant_custom.js",
+	"Employee": "public/js/employee_custom.js"
+}
+webform_include_js = {
+	"job-application": "public/js/job_applicant_webform.js",
+	"Job Applicant": "public/js/job_applicant_webform.js"
+}
+
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
@@ -137,13 +145,11 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Job Applicant": {
+		"before_insert": "job_recruitment.job_recruitment.job_applicant_logic.before_insert"
+	}
+}
 
 # Scheduled Tasks
 # ---------------
